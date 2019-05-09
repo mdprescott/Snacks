@@ -1,0 +1,42 @@
+import * as React from 'react'
+import { MenuProps } from './Menu'
+import { RadiumStyles } from '../..'
+
+export interface DropdownMenuProps {
+  /** MenuItems or Divider */
+  children: React.ReactNode
+
+  /** React component or HTML that will be used as the dropdown trigger. ie. Button or Icon */
+  triggerElement?: React.ReactElement
+
+  /** Open and close menu manually */
+  open?: boolean
+
+  /** Callback fired on dropdown close */
+  onClose?(): void
+
+  /** Callback fired on click */
+  onClick?(e: React.MouseEvent<HTMLElement>): void
+
+  /** Callback fired on dropdown open */
+  onOpen?(): void
+
+  /** Requesting to open/close for controlled open component. */
+  onRequestChange?(open: boolean): void
+
+  /** Callback function fired when a MenuItem is selected */
+  onSelect?: MenuProps['onSelect']
+
+  /** Customize style root element */
+  style?: RadiumStyles
+
+  /** Customize style of menu parent */
+  menuContainerStyle?: RadiumStyles
+
+  /** Props passed to Menu component */
+  menuProps?: MenuProps
+}
+
+declare const DropdownMenu: React.ComponentType<DropdownMenuProps>
+
+export default DropdownMenu

@@ -3,9 +3,10 @@
   "version": "0.0.123",
   "description": "The Instacart Component Library for Web",
   "main": "dist/snacks.js",
+  "types": "dist/types/index.d.ts",
   "scripts": {
     "analyze-webpack-bundles": "analyze=true npm run start",
-    "build": "webpack --progress --config webpack.release.config.js",
+    "build": "webpack --progress --config webpack.release.config.js && babel-node scripts/release/copy-types.js",
     "release:build": "babel-node scripts/release/build_release.js",
     "release:verifyBuild": "babel-node scripts/release/verify_build.js",
     "release:publish": "babel-node scripts/release/publish_release.js",
@@ -40,6 +41,9 @@
   "devDependencies": {
     "@instacart/eslint-config": "0.1.9",
     "@instacart/prettier-config": "0.1.1",
+    "@instacart/tsconfig": "0.1.1",
+    "@types/react": "16.8.13",
+    "babel-cli": "6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.4.1",
     "babel-loader": "^7.1.4",
@@ -56,6 +60,7 @@
     "eslint": "5.16.0",
     "eslint-import-resolver-webpack": "0.11.0",
     "fs-extra": "^5.0.0",
+    "glob": "7.1.4",
     "jest": "^22.4.2",
     "prettier": "1.16.4",
     "prompt": "^1.0.0",
@@ -66,6 +71,7 @@
     "react-test-renderer": "^16.2.0",
     "react-transition-group": "^2.2.1",
     "sinon": "^2.3.8",
+    "typescript": "^3.2.2",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "url-parse": "1.4.3",
     "webpack": "^4.12.0",
@@ -73,6 +79,10 @@
     "webpack-cli": "^3.0.4"
   },
   "dependencies": {
+    "@types/radium": "0.24.2",
+    "@types/react-text-mask": "5.4.4",
+    "@types/react-transition-group": "2.9.1",
+    "@types/validator": "10.11.0",
     "js-yaml": "3.13.1",
     "lodash.isequal": "^4.5.0",
     "react-text-mask": "^5.3.0",

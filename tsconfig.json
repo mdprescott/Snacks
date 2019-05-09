@@ -1,0 +1,12 @@
+{
+  "extends": "@instacart/tsconfig/babel",
+  "compilerOptions": {
+    "noEmit": true,
+    "allowSyntheticDefaultImports": false,
+    "rootDir": "./",
+    "paths": {
+      "utils/*": ["src/utils/*"],
+      "styles/*": ["src/styles/*"],
+    },
+  }
+}
