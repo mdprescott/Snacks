@@ -1,185 +1,185 @@
-export declare const accessibility: string
-export declare const accessibilityFilled: string
-export declare const account: string
-export declare const accountFilled: string
-export declare const addToOrder: string
-export declare const addToOrderFilled: string
-export declare const adjustment: string
-export declare const alcohol: string
-export declare const alcoholFilled: string
-export declare const appStore: string
-export declare const arrowDown: string
-export declare const arrowDownSmall: string
-export declare const arrowLeft: string
-export declare const arrowLeftSmall: string
-export declare const arrowRight: string
-export declare const arrowRightSmall: string
-export declare const arrowUp: string
-export declare const arrowUpSmall: string
-export declare const backgroundCheck: string
-export declare const bag: string
-export declare const bagFilled: string
-export declare const barcode: string
-export declare const bell: string
-export declare const bellFilled: string
-export declare const browse: string
-export declare const browseFilled: string
-export declare const calendar: string
-export declare const call: string
-export declare const callFilled: string
-export declare const car: string
-export declare const carFilled: string
-export declare const cart: string
-export declare const cartFilled: string
-export declare const categories: string
-export declare const categoriesFilled: string
-export declare const chat: string
-export declare const chatFilled: string
-export declare const checkmark: string
-export declare const checkmarkCircle: string
-export declare const checkmarkCircleDashed: string
-export declare const checkmarkCircleFilled: string
-export declare const clock: string
-export declare const clockFilled: string
-export declare const coffee: string
-export declare const cold: string
-export declare const copy: string
-export declare const coupons: string
-export declare const couponsFilled: string
-export declare const creditCard: string
-export declare const delete: string
-export declare const deleteFilled: string
-export declare const email: string
-export declare const emailFilled: string
-export declare const facebook: string
-export declare const filter: string
-export declare const fire: string
-export declare const fireFilled: string
-export declare const flag: string
-export declare const flagFilled: string
-export declare const gear: string
-export declare const gearFilled: string
-export declare const gift: string
-export declare const giftcard: string
-export declare const glitter: string
-export declare const glitterFilled: string
-export declare const google: string
-export declare const graph: string
-export declare const graphFilled: string
-export declare const help: string
-export declare const helpFilled: string
-export declare const home: string
-export declare const homeFilled: string
-export declare const info: string
-export declare const infoFilled: string
-export declare const inSeason: string
-export declare const inSeasonFilled: string
-export declare const instagram: string
-export declare const instructions: string
-export declare const instructionsFilled: string
-export declare const items: string
-export declare const itemsFilled: string
-export declare const lightbulb: string
-export declare const lightbulbFilled: string
-export declare const lightning: string
-export declare const lightningFilled: string
-export declare const like: string
-export declare const likeFilled: string
-export declare const listsAdd: string
-export declare const locationCurrent: string
-export declare const locationCurrentFilled: string
-export declare const locationMarker: string
-export declare const locationMarkerFilled: string
-export declare const lock: string
-export declare const lockFilled: string
-export declare const logout: string
-export declare const loyaltyCard: string
-export declare const loyaltyCardFilled: string
-export declare const menu: string
-export declare const minus: string
-export declare const money: string
-export declare const moneyFilled: string
-export declare const moon: string
-export declare const moonFilled: string
-export declare const more: string
-export declare const moreFilled: string
-export declare const no: string
-export declare const noFilled: string
-export declare const office: string
-export declare const officeFilled: string
-export declare const order: string
-export declare const orderFilled: string
-export declare const orderIssue: string
-export declare const orderIssueFilled: string
-export declare const orderReview: string
-export declare const orderReviewFilled: string
-export declare const orders: string
-export declare const ordersFilled: string
-export declare const organic: string
-export declare const organicFilled: string
-export declare const parking: string
-export declare const parkingFilled: string
-export declare const pencil: string
-export declare const pencilFilled: string
-export declare const person: string
-export declare const personAdd: string
-export declare const personAddFilled: string
-export declare const personFilled: string
-export declare const phone: string
-export declare const phoneFilled: string
-export declare const photo: string
-export declare const photoMissing: string
-export declare const pinterest: string
-export declare const playStore: string
-export declare const plus: string
-export declare const reaction: string
-export declare const reactionAdd: string
-export declare const recipes: string
-export declare const recurringOrder: string
-export declare const recurringOrderFilled: string
-export declare const refund: string
-export declare const reorder: string
-export declare const reorderFilled: string
-export declare const replacement: string
-export declare const sale: string
-export declare const saleFilled: string
-export declare const saveForLater: string
-export declare const saveForLaterFilled: string
-export declare const scan: string
-export declare const scissors: string
-export declare const search: string
-export declare const sendEmail: string
-export declare const sendEmailFilled: string
-export declare const share: string
-export declare const shareFilled: string
-export declare const skip: string
-export declare const skipFilled: string
-export declare const sort: string
-export declare const star: string
-export declare const starFilled: string
-export declare const store: string
-export declare const storeFilled: string
-export declare const sunset: string
-export declare const sunsetFilled: string
-export declare const thumbsDown: string
-export declare const thumbsUp: string
-export declare const ticket: string
-export declare const ticketFilled: string
-export declare const tobacco: string
-export declare const twitter: string
-export declare const unlock: string
-export declare const unlockFilled: string
-export declare const view: string
-export declare const viewFilled: string
-export declare const walking: string
-export declare const walkingFilled: string
-export declare const warning: string
-export declare const warningFilled: string
-export declare const weight: string
-export declare const weightFilled: string
-export declare const x: string
-export declare const xCircle: string
-export declare const xCircleFilled: string
-export declare const xSmall: string
-export declare const zoomIn: string
-export declare const zoomOut: string
+export { default as accessibility } from './icons/accessibility.svg'
+export { default as accessibilityFilled } from './icons/accessibilityFilled.svg'
+export { default as account } from './icons/account.svg'
+export { default as accountFilled } from './icons/accountFilled.svg'
+export { default as addToOrder } from './icons/addToOrder.svg'
+export { default as addToOrderFilled } from './icons/addToOrderFilled.svg'
+export { default as adjustment } from './icons/adjustment.svg'
+export { default as alcohol } from './icons/alcohol.svg'
+export { default as alcoholFilled } from './icons/alcoholFilled.svg'
+export { default as appStore } from './icons/appStore.svg'
+export { default as arrowDown } from './icons/arrowDown.svg'
+export { default as arrowDownSmall } from './icons/arrowDownSmall.svg'
+export { default as arrowLeft } from './icons/arrowLeft.svg'
+export { default as arrowLeftSmall } from './icons/arrowLeftSmall.svg'
+export { default as arrowRight } from './icons/arrowRight.svg'
+export { default as arrowRightSmall } from './icons/arrowRightSmall.svg'
+export { default as arrowUp } from './icons/arrowUp.svg'
+export { default as arrowUpSmall } from './icons/arrowUpSmall.svg'
+export { default as backgroundCheck } from './icons/backgroundCheck.svg'
+export { default as bag } from './icons/bag.svg'
+export { default as bagFilled } from './icons/bagFilled.svg'
+export { default as barcode } from './icons/barcode.svg'
+export { default as bell } from './icons/bell.svg'
+export { default as bellFilled } from './icons/bellFilled.svg'
+export { default as browse } from './icons/browse.svg'
+export { default as browseFilled } from './icons/browseFilled.svg'
+export { default as calendar } from './icons/calendar.svg'
+export { default as call } from './icons/call.svg'
+export { default as callFilled } from './icons/callFilled.svg'
+export { default as car } from './icons/car.svg'
+export { default as carFilled } from './icons/carFilled.svg'
+export { default as cart } from './icons/cart.svg'
+export { default as cartFilled } from './icons/cartFilled.svg'
+export { default as categories } from './icons/categories.svg'
+export { default as categoriesFilled } from './icons/categoriesFilled.svg'
+export { default as chat } from './icons/chat.svg'
+export { default as chatFilled } from './icons/chatFilled.svg'
+export { default as checkmark } from './icons/checkmark.svg'
+export { default as checkmarkCircle } from './icons/checkmarkCircle.svg'
+export { default as checkmarkCircleDashed } from './icons/checkmarkCircleDashed.svg'
+export { default as checkmarkCircleFilled } from './icons/checkmarkCircleFilled.svg'
+export { default as clock } from './icons/clock.svg'
+export { default as clockFilled } from './icons/clockFilled.svg'
+export { default as coffee } from './icons/coffee.svg'
+export { default as cold } from './icons/cold.svg'
+export { default as copy } from './icons/copy.svg'
+export { default as coupons } from './icons/coupons.svg'
+export { default as couponsFilled } from './icons/couponsFilled.svg'
+export { default as creditCard } from './icons/creditCard.svg'
+export { default as delete } from './icons/delete.svg'
+export { default as deleteFilled } from './icons/deleteFilled.svg'
+export { default as email } from './icons/email.svg'
+export { default as emailFilled } from './icons/emailFilled.svg'
+export { default as facebook } from './icons/facebook.svg'
+export { default as filter } from './icons/filter.svg'
+export { default as fire } from './icons/fire.svg'
+export { default as fireFilled } from './icons/fireFilled.svg'
+export { default as flag } from './icons/flag.svg'
+export { default as flagFilled } from './icons/flagFilled.svg'
+export { default as gear } from './icons/gear.svg'
+export { default as gearFilled } from './icons/gearFilled.svg'
+export { default as gift } from './icons/gift.svg'
+export { default as giftcard } from './icons/giftcard.svg'
+export { default as glitter } from './icons/glitter.svg'
+export { default as glitterFilled } from './icons/glitterFilled.svg'
+export { default as google } from './icons/google.svg'
+export { default as graph } from './icons/graph.svg'
+export { default as graphFilled } from './icons/graphFilled.svg'
+export { default as help } from './icons/help.svg'
+export { default as helpFilled } from './icons/helpFilled.svg'
+export { default as home } from './icons/home.svg'
+export { default as homeFilled } from './icons/homeFilled.svg'
+export { default as info } from './icons/info.svg'
+export { default as infoFilled } from './icons/infoFilled.svg'
+export { default as inSeason } from './icons/inSeason.svg'
+export { default as inSeasonFilled } from './icons/inSeasonFilled.svg'
+export { default as instagram } from './icons/instagram.svg'
+export { default as instructions } from './icons/instructions.svg'
+export { default as instructionsFilled } from './icons/instructionsFilled.svg'
+export { default as items } from './icons/items.svg'
+export { default as itemsFilled } from './icons/itemsFilled.svg'
+export { default as lightbulb } from './icons/lightbulb.svg'
+export { default as lightbulbFilled } from './icons/lightbulbFilled.svg'
+export { default as lightning } from './icons/lightning.svg'
+export { default as lightningFilled } from './icons/lightningFilled.svg'
+export { default as like } from './icons/like.svg'
+export { default as likeFilled } from './icons/likeFilled.svg'
+export { default as listsAdd } from './icons/listsAdd.svg'
+export { default as locationCurrent } from './icons/locationCurrent.svg'
+export { default as locationCurrentFilled } from './icons/locationCurrentFilled.svg'
+export { default as locationMarker } from './icons/locationMarker.svg'
+export { default as locationMarkerFilled } from './icons/locationMarkerFilled.svg'
+export { default as lock } from './icons/lock.svg'
+export { default as lockFilled } from './icons/lockFilled.svg'
+export { default as logout } from './icons/logout.svg'
+export { default as loyaltyCard } from './icons/loyaltyCard.svg'
+export { default as loyaltyCardFilled } from './icons/loyaltyCardFilled.svg'
+export { default as menu } from './icons/menu.svg'
+export { default as minus } from './icons/minus.svg'
+export { default as money } from './icons/money.svg'
+export { default as moneyFilled } from './icons/moneyFilled.svg'
+export { default as moon } from './icons/moon.svg'
+export { default as moonFilled } from './icons/moonFilled.svg'
+export { default as more } from './icons/more.svg'
+export { default as moreFilled } from './icons/moreFilled.svg'
+export { default as no } from './icons/no.svg'
+export { default as noFilled } from './icons/noFilled.svg'
+export { default as office } from './icons/office.svg'
+export { default as officeFilled } from './icons/officeFilled.svg'
+export { default as order } from './icons/order.svg'
+export { default as orderFilled } from './icons/orderFilled.svg'
+export { default as orderIssue } from './icons/orderIssue.svg'
+export { default as orderIssueFilled } from './icons/orderIssueFilled.svg'
+export { default as orderReview } from './icons/orderReview.svg'
+export { default as orderReviewFilled } from './icons/orderReviewFilled.svg'
+export { default as orders } from './icons/orders.svg'
+export { default as ordersFilled } from './icons/ordersFilled.svg'
+export { default as organic } from './icons/organic.svg'
+export { default as organicFilled } from './icons/organicFilled.svg'
+export { default as parking } from './icons/parking.svg'
+export { default as parkingFilled } from './icons/parkingFilled.svg'
+export { default as pencil } from './icons/pencil.svg'
+export { default as pencilFilled } from './icons/pencilFilled.svg'
+export { default as person } from './icons/person.svg'
+export { default as personAdd } from './icons/personAdd.svg'
+export { default as personAddFilled } from './icons/personAddFilled.svg'
+export { default as personFilled } from './icons/personFilled.svg'
+export { default as phone } from './icons/phone.svg'
+export { default as phoneFilled } from './icons/phoneFilled.svg'
+export { default as photo } from './icons/photo.svg'
+export { default as photoMissing } from './icons/photoMissing.svg'
+export { default as pinterest } from './icons/pinterest.svg'
+export { default as playStore } from './icons/playStore.svg'
+export { default as plus } from './icons/plus.svg'
+export { default as reaction } from './icons/reaction.svg'
+export { default as reactionAdd } from './icons/reactionAdd.svg'
+export { default as recipes } from './icons/recipes.svg'
+export { default as recurringOrder } from './icons/recurringOrder.svg'
+export { default as recurringOrderFilled } from './icons/recurringOrderFilled.svg'
+export { default as refund } from './icons/refund.svg'
+export { default as reorder } from './icons/reorder.svg'
+export { default as reorderFilled } from './icons/reorderFilled.svg'
+export { default as replacement } from './icons/replacement.svg'
+export { default as sale } from './icons/sale.svg'
+export { default as saleFilled } from './icons/saleFilled.svg'
+export { default as saveForLater } from './icons/saveForLater.svg'
+export { default as saveForLaterFilled } from './icons/saveForLaterFilled.svg'
+export { default as scan } from './icons/scan.svg'
+export { default as scissors } from './icons/scissors.svg'
+export { default as search } from './icons/search.svg'
+export { default as sendEmail } from './icons/sendEmail.svg'
+export { default as sendEmailFilled } from './icons/sendEmailFilled.svg'
+export { default as share } from './icons/share.svg'
+export { default as shareFilled } from './icons/shareFilled.svg'
+export { default as skip } from './icons/skip.svg'
+export { default as skipFilled } from './icons/skipFilled.svg'
+export { default as sort } from './icons/sort.svg'
+export { default as star } from './icons/star.svg'
+export { default as starFilled } from './icons/starFilled.svg'
+export { default as store } from './icons/store.svg'
+export { default as storeFilled } from './icons/storeFilled.svg'
+export { default as sunset } from './icons/sunset.svg'
+export { default as sunsetFilled } from './icons/sunsetFilled.svg'
+export { default as thumbsDown } from './icons/thumbsDown.svg'
+export { default as thumbsUp } from './icons/thumbsUp.svg'
+export { default as ticket } from './icons/ticket.svg'
+export { default as ticketFilled } from './icons/ticketFilled.svg'
+export { default as tobacco } from './icons/tobacco.svg'
+export { default as twitter } from './icons/twitter.svg'
+export { default as unlock } from './icons/unlock.svg'
+export { default as unlockFilled } from './icons/unlockFilled.svg'
+export { default as view } from './icons/view.svg'
+export { default as viewFilled } from './icons/viewFilled.svg'
+export { default as walking } from './icons/walking.svg'
+export { default as walkingFilled } from './icons/walkingFilled.svg'
+export { default as warning } from './icons/warning.svg'
+export { default as warningFilled } from './icons/warningFilled.svg'
+export { default as weight } from './icons/weight.svg'
+export { default as weightFilled } from './icons/weightFilled.svg'
+export { default as x } from './icons/x.svg'
+export { default as xCircle } from './icons/xCircle.svg'
+export { default as xCircleFilled } from './icons/xCircleFilled.svg'
+export { default as xSmall } from './icons/xSmall.svg'
+export { default as zoomIn } from './icons/zoomIn.svg'
+export { default as zoomOut } from './icons/zoomOut.svg'

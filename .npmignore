@@ -9,6 +9,7 @@ docs
 .codeclimate.yml
 .codecov.yml
 .eslintrc.js
+tsconfig.json
 prettier.config.js
 styleguide.config.js
 webpack.config.js

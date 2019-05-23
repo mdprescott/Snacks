@@ -3,10 +3,10 @@
   "compilerOptions": {
     "noEmit": true,
     "allowSyntheticDefaultImports": false,
-    "rootDir": "./",
+    "baseUrl": "./src",
     "paths": {
-      "utils/*": ["src/utils/*"],
-      "styles/*": ["src/styles/*"],
+      "utils/*": ["./utils/*"],
+      "styles/*": ["./styles/*"],
     },
   }
 }
