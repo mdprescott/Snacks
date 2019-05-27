@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { FormComponentInjectedProps, ApplyFormComponent } from './FormComponent'
-import { WithThemeInjectedProps, ApplyWithTheme } from '../../styles/themer/withTheme'
+import { FormComponentInjectedProps, ApplyFormComponentProps } from './FormComponent'
+import { WithThemeInjectedProps, ApplyWithThemeProps } from '../../styles/themer/withTheme'
 import { RadiumStyles } from '../..'
 
 export type Option<TValue = string | number | boolean> = {
@@ -73,6 +73,8 @@ export interface SelectProps extends FormComponentInjectedProps, WithThemeInject
   validationErrorText?: string
 }
 
-declare const Select: ApplyWithTheme<ApplyFormComponent<React.ComponentType<SelectProps>>>
+declare const Select: React.ComponentClass<
+  ApplyWithThemeProps<ApplyFormComponentProps<SelectProps>>
+>
 
 export default Select

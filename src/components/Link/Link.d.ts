@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { RadiumStyles, ElementAttributes } from '../..'
-import { WithThemeInjectedProps, ApplyWithTheme } from '../../styles/themer/withTheme'
+import { WithThemeInjectedProps, ApplyWithThemeProps } from '../../styles/themer/withTheme'
 
 export interface LinkProps extends WithThemeInjectedProps {
   /** The link's text content. */
@@ -10,7 +10,7 @@ export interface LinkProps extends WithThemeInjectedProps {
   href?: string
 
   /** Callback fired when the link is clicked. */
-  onClick(e: React.MouseEvent<HTMLAnchorElement>, props: Props): void
+  onClick(e: React.MouseEvent<HTMLAnchorElement>, props: LinkProps): void
 
   /** Any additonal props */
   elementAttributes?: ElementAttributes<React.ComponentPropsWithoutRef<'a'>>
@@ -18,6 +18,6 @@ export interface LinkProps extends WithThemeInjectedProps {
   style?: RadiumStyles
 }
 
-declare const Link: ApplyWithTheme<React.ComponentType<LinkProps>>
+declare const Link: React.ComponentType<ApplyWithThemeProps<LinkProps>>
 
 export default Link

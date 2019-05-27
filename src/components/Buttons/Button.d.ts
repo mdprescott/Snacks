@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { RadiumStyles, ElementAttributes } from '../..'
-import { WithThemeInjectedProps, ApplyWithTheme } from '../../styles/themer/withTheme'
+import { WithThemeInjectedProps, ApplyWithThemeProps } from '../../styles/themer/withTheme'
 
 export interface ButtonProps
   extends WithThemeInjectedProps,
@@ -41,6 +41,6 @@ export interface ButtonProps
   href?: string
 }
 
-declare const Button: ApplyWithTheme<React.ComponentType<ButtonProps>>
+declare const Button: React.ComponentClass<ApplyWithThemeProps<ButtonProps>>
 
 export default Button

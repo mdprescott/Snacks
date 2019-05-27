@@ -34,6 +34,6 @@ export interface TextProps extends Omit<React.HTMLAttributes<HTMLElement>, 'styl
   style?: RadiumStyles
 }
 
-declare const Text: React.ComponentType<TextProps>
+declare const Text: React.ComponentClass<TextProps>
 
 export default Text

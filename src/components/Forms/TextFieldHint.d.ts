@@ -18,6 +18,6 @@ export interface TextFieldHintProps {
   inputId: string
 }
 
-declare const TextFieldHint: React.ComponentType<TextFieldHintProps>
+declare const TextFieldHint: React.ComponentClass<TextFieldHintProps>
 
 export default TextFieldHint

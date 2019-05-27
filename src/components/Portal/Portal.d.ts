@@ -5,6 +5,6 @@ interface PortalProps {
   container?: React.ReactElement
 }
 
-declare const Portal: React.ComponentType<PortalProps>
+declare const Portal: React.ComponentClass<PortalProps>
 
 export default Portal

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { WithThemeInjectedProps, ApplyWithTheme } from '../../styles/themer/withTheme'
+import { WithThemeInjectedProps, ApplyWithThemeProps } from '../../styles/themer/withTheme'
 import { RadiumStyles, ElementAttributes } from '../..'
 import { Theme } from '../../styles/themer/utils'
 
@@ -17,6 +17,6 @@ export interface PillProps extends WithThemeInjectedProps {
   elementAttributes?: ElementAttributes<React.ComponentPropsWithoutRef<'div'>>
 }
 
-declare const Pill: ApplyWithTheme<React.ComponentType<PillProps>>
+declare const Pill: React.ComponentType<ApplyWithThemeProps<PillProps>>
 
 export default Pill

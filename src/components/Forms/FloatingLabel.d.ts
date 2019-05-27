@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { WithThemeInjectedProps, ApplyWithTheme } from '../../styles/themer/withTheme'
+import { WithThemeInjectedProps, ApplyWithThemeProps } from '../../styles/themer/withTheme'
 import { RadiumStyles } from '../..'
 
 export interface FloatingLabelProps extends WithThemeInjectedProps {
@@ -25,6 +25,6 @@ export interface FloatingLabelProps extends WithThemeInjectedProps {
   text?: string
 }
 
-declare const TextField: ApplyWithTheme<React.ComponentType<FloatingLabelProps>>
+declare const TextField: React.ComponentClass<ApplyWithThemeProps<FloatingLabelProps>>
 
 export default TextField

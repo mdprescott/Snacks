@@ -8,6 +8,6 @@ export interface ServerErrorProps {
   text?: React.ReactNode
 }
 
-declare const ServerError: React.ComponentType<ServerErrorProps>
+declare const ServerError: React.ComponentClass<ServerErrorProps>
 
 export default ServerError

@@ -26,6 +26,6 @@ export interface SlideProps extends Partial<Pick<TransitionProps, 'in' | 'appear
   style?: React.CSSProperties
 }
 
-declare const Slide: React.ComponentType<SlideProps>
+declare const Slide: React.ComponentClass<SlideProps>
 
 export default Slide

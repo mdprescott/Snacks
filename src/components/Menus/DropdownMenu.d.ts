@@ -2,7 +2,7 @@ import * as React from 'react'
 import { MenuProps } from './Menu'
 import { RadiumStyles } from '../..'
 
-export interface DropdownMenuProps {
+export interface DropdownMenuProps<TValue extends string | number | boolean = string> {
   /** MenuItems or Divider */
   children: React.ReactNode
 
@@ -25,7 +25,7 @@ export interface DropdownMenuProps {
   onRequestChange?(open: boolean): void
 
   /** Callback function fired when a MenuItem is selected */
-  onSelect?: MenuProps['onSelect']
+  onSelect?: MenuProps<TValue>['onSelect']
 
   /** Customize style root element */
   style?: RadiumStyles
@@ -37,6 +37,8 @@ export interface DropdownMenuProps {
   menuProps?: MenuProps
 }
 
-declare const DropdownMenu: React.ComponentType<DropdownMenuProps>
-
-export default DropdownMenu
+export default class DropdownMenu<
+  TValue extends string | number | boolean = string
+> extends React.Component<DropdownMenuProps<TValue>> {
+  render(): JSX.Element
+}

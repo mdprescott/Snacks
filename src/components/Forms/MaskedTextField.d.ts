@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { MaskedInputProps } from 'react-text-mask'
-import { FormComponentInjectedProps, ApplyFormComponent } from './FormComponent'
-import { WithThemeInjectedProps, ApplyWithTheme } from '../../styles/themer/withTheme'
+import { FormComponentInjectedProps, ApplyFormComponentProps } from './FormComponent'
+import { WithThemeInjectedProps, ApplyWithThemeProps } from '../../styles/themer/withTheme'
 import { RadiumStyles } from '../..'
 
 export interface MaskedTextFieldProps
@@ -96,8 +96,8 @@ export interface MaskedTextFieldProps
   value?: string
 }
 
-declare const MaskedTextField: ApplyWithTheme<
-  ApplyFormComponent<React.ComponentType<MaskedTextFieldProps>>
+declare const MaskedTextField: React.ComponentClass<
+  ApplyWithThemeProps<ApplyFormComponentProps<MaskedTextFieldProps>>
 >
 
 export default MaskedTextField

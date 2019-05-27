@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { FormComponentInjectedProps, ApplyFormComponent } from './FormComponent'
-import { WithThemeInjectedProps, ApplyWithTheme } from '../../styles/themer/withTheme'
+import { FormComponentInjectedProps, ApplyFormComponentProps } from './FormComponent'
+import { WithThemeInjectedProps, ApplyWithThemeProps } from '../../styles/themer/withTheme'
 import { RadiumStyles, ElementAttributes } from '../..'
 
 export interface TextFieldProps
@@ -44,7 +44,7 @@ export interface TextFieldProps
   isValid: boolean
 
   /** onChange callback */
-  onChange(e: React.ChangeEvent<HTMLInputElement>, value: string): void
+  onChange?(e: React.ChangeEvent<HTMLInputElement>, value: string): void
 
   /** Mark the field as required.  */
   required?: boolean
@@ -68,6 +68,8 @@ export interface TextFieldProps
   elementAttributes?: ElementAttributes<React.ComponentPropsWithoutRef<'input'>>
 }
 
-declare const TextField: ApplyWithTheme<ApplyFormComponent<React.ComponentType<TextFieldProps>>>
+declare const TextField: React.ComponentClass<
+  ApplyWithThemeProps<ApplyFormComponentProps<TextFieldProps>>
+>
 
 export default TextField

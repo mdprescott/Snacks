@@ -31,7 +31,7 @@ interface FormComponentProps {
   regexValidation?: string
 
   /** Validations from validator.js */
-  validations: Validations
+  validations?: Validations
 }
 
 export interface FormComponentInjectedProps extends FormComponentProps {
@@ -42,14 +42,16 @@ export interface FormComponentInjectedProps extends FormComponentProps {
   id: string
 }
 
-// helper for applying hoc in .d.ts files
-export type ApplyFormComponent<
-  T extends React.ComponentType<P>,
-  P extends FormComponentInjectedProps = React.ComponentProps<T>
-> = React.ComponentType<Omit<P, keyof FormComponentInjectedProps> & FormComponentProps>
+// helper for applying hoc props in .d.ts files
+export type ApplyFormComponentProps<P extends FormComponentInjectedProps> = Omit<
+  P,
+  keyof FormComponentInjectedProps
+> &
+  Partial<Pick<FormComponentInjectedProps, 'serverError' | 'hasError' | 'id' | 'isValid'>> &
+  FormComponentProps
 
 declare function formComponent<P extends FormComponentInjectedProps>(
   component: React.ComponentType<P>
-): React.ComponentType<Omit<P, keyof FormComponentInjectedProps> & FormComponentProps>
+): React.ComponentClass<Omit<P, keyof FormComponentInjectedProps> & FormComponentProps>
 
 export default formComponent

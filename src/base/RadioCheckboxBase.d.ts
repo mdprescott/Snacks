@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { WithThemeInjectedProps, ApplyWithTheme } from '../styles/themer/withTheme'
+import { WithThemeInjectedProps, ApplyWithThemeProps } from '../styles/themer/withTheme'
 
 export interface RadioCheckboxBaseProps
   extends WithThemeInjectedProps,
@@ -22,6 +22,6 @@ export interface RadioCheckboxBaseProps
   }
 }
 
-declare const RadioCheckboxBase: ApplyWithTheme<React.ComponentType<RadioCheckboxBaseProps>>
+declare const RadioCheckboxBase: React.ComponentClass<ApplyWithThemeProps<RadioCheckboxBaseProps>>
 
 export default RadioCheckboxBase

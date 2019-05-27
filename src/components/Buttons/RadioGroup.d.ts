@@ -12,6 +12,6 @@ export interface RadioGroupProps {
   }
 }
 
-declare const RadioGroup: React.ComponentType<RadioGroupProps>
+declare const RadioGroup: React.ComponentClass<RadioGroupProps>
 
 export default RadioGroup

@@ -24,6 +24,6 @@ export interface FadeProps extends Partial<Pick<TransitionProps, 'in' | 'appear'
   style?: React.CSSProperties
 }
 
-declare const Fade: React.ComponentType<FadeProps>
+declare const Fade: React.ComponentClass<FadeProps>
 
 export default Fade

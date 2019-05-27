@@ -4,6 +4,6 @@ export interface HelperTextProps {
   helperText?: string
 }
 
-declare const HelperText: React.ComponentType<HelperTextProps>
+declare const HelperText: React.FunctionComponent<HelperTextProps>
 
 export default HelperText

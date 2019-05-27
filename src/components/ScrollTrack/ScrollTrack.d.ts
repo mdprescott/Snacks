@@ -64,6 +64,6 @@ export interface ScrollTrackProps {
   }
 }
 
-declare const ScrollTrack: React.ComponentType<ScrollTrackProps>
+declare const ScrollTrack: React.ComponentClass<ScrollTrackProps>
 
 export default ScrollTrack

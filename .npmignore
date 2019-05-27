@@ -5,6 +5,7 @@ src
 scripts
 lib
 docs
+test
 .babelrc
 .codeclimate.yml
 .codecov.yml

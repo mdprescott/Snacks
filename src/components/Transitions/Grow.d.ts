@@ -37,6 +37,6 @@ export interface GrowProps extends Partial<Pick<TransitionProps, 'in' | 'appear'
   style?: React.CSSProperties
 }
 
-declare const Grow: React.ComponentType<GrowProps>
+declare const Grow: React.ComponentClass<GrowProps>
 
 export default Grow

@@ -6,6 +6,6 @@ export interface PhoneNumberFieldProps
   extends Omit<MaskedTextFieldProps, 'mask' | 'getValue'>,
     Partial<Pick<MaskedTextFieldProps, 'mask' | 'getValue'>> {}
 
-declare const PhoneNumberField: React.ComponentType<PhoneNumberFieldProps>
+declare const PhoneNumberField: React.ComponentClass<PhoneNumberFieldProps>
 
 export default PhoneNumberField

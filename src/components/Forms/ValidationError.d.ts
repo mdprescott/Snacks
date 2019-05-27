@@ -11,6 +11,6 @@ export interface ValidationErrorProps {
   show?: boolean
 }
 
-declare const ValidationError: React.ComponentType<ValidationErrorProps>
+declare const ValidationError: React.ComponentClass<ValidationErrorProps>
 
 export default ValidationError

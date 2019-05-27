@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { WithThemeInjectedProps, ApplyWithTheme } from '../../styles/themer/withTheme'
+import { WithThemeInjectedProps, ApplyWithThemeProps } from '../../styles/themer/withTheme'
 import { ElementAttributes } from '../..'
 import { NavigationPillProps } from './NavigationPill'
 
@@ -30,6 +30,6 @@ export interface NavigationPillsProps extends WithThemeInjectedProps {
   activePill?: string
 }
 
-declare const NavigationPills: ApplyWithTheme<React.ComponentType<NavigationPillsProps>>
+declare const NavigationPills: React.ComponentClass<ApplyWithThemeProps<NavigationPillsProps>>
 
 export default NavigationPills

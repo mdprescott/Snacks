@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { RadiumStyles } from '../..'
 
-export interface MenuItemProps {
+export interface MenuItemProps<TValue extends string | number | boolean = string> {
   /** Completely override the MenuItem rendering and create a custom MenuItem */
   children?: React.ReactNode
 
@@ -21,23 +21,23 @@ export interface MenuItemProps {
   labelStyles?: RadiumStyles
 
   /** Icon name or Icon component displayed left of label */
-  leftIcon: string | React.ReactNode
+  leftIcon?: string | React.ReactNode
 
   /** Override styles for leftIcon */
   leftIconStyles?: RadiumStyles
 
   /** Callback function fired when the menu item is click. Overriden by parent Menu or DropdownMenu */
-  _onClick(
+  _onClick?(
     e: React.MouseEvent<HTMLElement>,
-    option: { value: MenuItemProps['value']; label: string },
+    option: { value: TValue; label: string },
     index: number
   ): void
 
   /** Callback function fired when the menu item is focused. */
-  onFocus(index: number, e: React.FocusEvent<HTMLElement>): void
+  onFocus?(index: number, e: React.FocusEvent<HTMLElement>): void
 
   /** Used by menu to keep track of current focus index. */
-  onMenuItemFocus(index: number): void
+  onMenuItemFocus?(index: number): void
 
   /** Whether or not to prevent default when menu item is clicked */
   preventDefault?: boolean
@@ -55,9 +55,11 @@ export interface MenuItemProps {
   useTabIndex?: boolean
 
   /** Underlying value. Also, passed into _onClick function */
-  value: string | number | boolean
+  value: TValue
 }
 
-declare const MenuItem: React.ComponentType<MenuItemProps>
-
-export default MenuItem
+export default class MenuItem<
+  TValue extends string | number | boolean = string
+> extends React.Component<MenuItemProps<TValue>> {
+  render(): JSX.Element
+}

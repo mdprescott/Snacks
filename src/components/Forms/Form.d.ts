@@ -24,6 +24,6 @@ export interface FormProps {
   serverErrors: null | { [key: string]: string }
 }
 
-declare const Form: React.ComponentType<FormProps>
+declare const Form: React.ComponentClass<FormProps>
 
 export default Form

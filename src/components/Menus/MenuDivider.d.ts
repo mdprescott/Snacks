@@ -4,6 +4,6 @@ export interface MenuDividerProps {
   style?: React.CSSProperties
 }
 
-declare const MenuDivider: React.ComponentType<MenuDividerProps>
+declare const MenuDivider: React.FunctionComponent<MenuDividerProps>
 
 export default MenuDivider

@@ -48,9 +48,9 @@ import Text from './components/Typography/Text'
 import { themePropTypes } from './styles/themer/utils'
 
 interface RadiumCSSProperties extends React.CSSProperties {
-  ':hover': React.CSSProperties
-  ':focus': React.CSSProperties
-  ':active': React.CSSProperties
+  ':hover'?: React.CSSProperties
+  ':focus'?: React.CSSProperties
+  ':active'?: React.CSSProperties
 }
 
 type RadiumStylesBase = RadiumCSSProperties | RadiumCSSProperties[]

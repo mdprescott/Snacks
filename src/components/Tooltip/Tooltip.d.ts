@@ -32,6 +32,6 @@ export interface TooltipProps {
   isVisible?: boolean
 }
 
-declare const Tooltip: React.ComponentType<TooltipProps>
+declare const Tooltip: React.ComponentClass<TooltipProps>
 
 export default Tooltip

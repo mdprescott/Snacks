@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { MenuItemProps } from './MenuItem'
 
-export interface MenuProps extends Pick<React.ComponentProps<'div'>, 'onBlur' | 'onKeyDown'> {
+export interface MenuProps<TValue extends string | number | boolean = string>
+  extends Pick<React.ComponentProps<'div'>, 'onBlur' | 'onKeyDown'> {
   /** aria-hidden HTML attribute */
   ariaHidden?: boolean
 
@@ -9,7 +10,7 @@ export interface MenuProps extends Pick<React.ComponentProps<'div'>, 'onBlur' | 
   children: React.ReactNode
 
   /** Callback function fired when a MenuItem is selected */
-  onSelect: MenuItemProps['_onClick']
+  onSelect: MenuItemProps<TValue>['_onClick']
 
   /** Role HTML attribute */
   role?: string
@@ -18,6 +19,8 @@ export interface MenuProps extends Pick<React.ComponentProps<'div'>, 'onBlur' | 
   style?: React.CSSProperties
 }
 
-declare const Menu: React.ComponentType<MenuProps>
-
-export default Menu
+export default class Menu<
+  TValue extends string | number | boolean = string
+> extends React.Component<MenuProps<TValue>> {
+  render(): JSX.Element
+}

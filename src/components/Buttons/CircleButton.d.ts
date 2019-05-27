@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { WithThemeInjectedProps, ApplyWithTheme } from '../../styles/themer/withTheme'
+import { WithThemeInjectedProps, ApplyWithThemeProps } from '../../styles/themer/withTheme'
 
 export interface CircleButtonProps
   extends WithThemeInjectedProps,
@@ -11,6 +11,6 @@ export interface CircleButtonProps
   disabled?: boolean
 }
 
-declare const CircleButton: ApplyWithTheme<React.ComponentType<CircleButtonProps>>
+declare const CircleButton: React.FunctionComponent<ApplyWithThemeProps<CircleButtonProps>>
 
 export default CircleButton
